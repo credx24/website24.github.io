@@ -98,6 +98,38 @@ body{
     text-align: left;
     padding: 15vmin 5vmin 30vmin 20vmin;
 }
+.header .row .col-md-6 h1{
+    position: relative;
+    font-size: 50px;
+    display: inline-block;
+    animation: text_reveal .5s ease forwards;
+    color: transparent;
+    animation-delay: .5s;
+}
+.header .row .col-md-6 h1 span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: goldenrod;
+    animation: overlay 1s ease forwards;
+}
+@keyframes overlay{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        left: 100%;
+        width: 0;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
 /* getstarted end */
 .section-3 .container{
     margin-top: 8%;
