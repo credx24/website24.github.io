@@ -17,18 +17,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    <title>Community_Hub</title>
+    <title>Credx Security and Scam</title>
   </head>
   <body>
     <!--Nav start-->
-    <nav class="navbar navbar-expand-lg navbar-light px-4 bg-dark">
+    <nav class="navbar navbar-expand-lg px-4 navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand fs-2" href="index.html"><img src="images/CredXlogo.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: darkorange;">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 text-start">
+          <ul class="navbar-nav me-auto mb-15 mb-lg-0 fs-5 text-center">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false">
                 Use Credx
@@ -36,7 +38,7 @@
               <ul class="dropdown-menu text-primary dropdown-menu-dark" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="credx_wallet.html">CredX Wallets</a></li>
                 <li><a class="dropdown-item" href="Get_CDX.html">Get CDX</a></li>
-                <li><a class="dropdown-item" href="Refund_failed_transaction.html">Refund Failed Transaction</a></li>
+                <li><a class="dropdown-item" href="stake_cdx.html">Stake CDX</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -45,12 +47,11 @@
               </a>
               <ul class="dropdown-menu text-primary dropdown-menu-dark" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="What_is_credx.html">What is CredX?</a></li>
-                <li><a class="dropdown-item" href="what_is_cdx.html">What is CDX</a></li>
+                <li><a class="dropdown-item" href="what_is_cdx.html">What is CDX?</a></li>
                 <li><a class="dropdown-item" href="Defi.html">Decentralized Finance(DeFi)</a></li>
                 <li><a class="dropdown-item" href="smart_contract.html">Smart Contracts</a></li>
-                <li><a class="dropdown-item" href="history_of_credx.html">History of Credx</a></li>
                 <li><a class="dropdown-item" href="images/Credx_HongKong.pdf" target="_blank">WhitePaper</a></li>
-                <li><a class="dropdown-item" href="Credx_upgrades.html">CredX Upgrades</a></li>
+                <li><a class="dropdown-item" href="security_scam.html">CredX Security and Scam Preventation</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -58,7 +59,7 @@
                 Developers
               </a>
               <ul class="dropdown-menu text-primary dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="Developer_name.html">Developer'S Name</a></li>
+                <li><a class="dropdown-item" href="Developer_home.html">Developer'S Home</a></li>
                 <li><a class="dropdown-item" href="Documentation.html">Documentation</a></li>
                 <li><a class="dropdown-item" href="tutorial.html">Tutorials</a></li>
               </ul>
@@ -82,7 +83,17 @@
               </ul>
             </li>
           </ul>
-          <ul class="d-flex text-white text-end" style="width: 50px;">
+          <form class="d-flex text-white fs-6 mx-auto" style="width: 30px;">
+              <i class="fas fa-moon" onclick="myFunction()"><br>
+                  <script>
+                      function myFunction() {
+                      var element = document.body;
+                      element.classList.toggle("dark-mode");
+                      }
+                  </script>
+              </i>
+          </form>
+          <!--<ul class="d-flex text-white text-end" style="width: 50px;">
             <i class="fas fa-moon" onclick="myFunction()"><br>
                 <script>
                     function myFunction() {
@@ -100,7 +111,7 @@
                           }
                   </script>
               </script>
-          </ul>
+          </ul>-->
         </div>
       </div>
     </nav>

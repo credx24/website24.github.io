@@ -22,14 +22,16 @@
   </head>
   <body>
     <!--Nav start-->
-    <nav class="navbar navbar-expand-lg navbar-light px-4 bg-dark">
+    <nav class="navbar navbar-expand-lg px-4 navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand fs-2" href="index.html"><img src="images/CredXlogo.png"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: darkorange;">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: darkorange;">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-10 mb-lg-0 fs-5 text-start">
+            <ul class="navbar-nav me-auto mb-15 mb-lg-0 fs-5 text-center">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false">
                   Use Credx
@@ -38,7 +40,6 @@
                   <li><a class="dropdown-item" href="credx_wallet.html">CredX Wallets</a></li>
                   <li><a class="dropdown-item" href="Get_CDX.html">Get CDX</a></li>
                   <li><a class="dropdown-item" href="stake_cdx.html">Stake CDX</a></li>
-                  <li><a class="dropdown-item" href="Refund_failed_transaction.html">Refund Failed Transaction</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -83,7 +84,7 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex text-white fs-6" style="width: 30px;">
+            <form class="d-flex text-white fs-6 mx-auto" style="width: 30px;">
                 <i class="fas fa-moon" onclick="myFunction()"><br>
                     <script>
                         function myFunction() {
@@ -92,15 +93,6 @@
                         }
                     </script>
                 </i>
-            </form>
-            <form class="d-flex" id="google_translate_element">
-                <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                    <script>
-                            function googleTranslateElementInit() {
-                                new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-                            }
-                    </script>
-                </script>
             </form>
             <!--<ul class="d-flex text-white text-end" style="width: 50px;">
               <i class="fas fa-moon" onclick="myFunction()"><br>
@@ -131,7 +123,7 @@
           <div class="row">
               <div class="col-md-6 col-sm-12">
                   <h1>Welcome to Credx<span></span></h1><br>
-                  <h1 style="color: goldenrod;">Blockchain<span></span></h1>
+                  <h1>Blockchain<span></span></h1>
                   <!--<h1 style="font-size: 40px;">Welcome to CREDX<br><span class="text-warning">Blockchain</span></h1>-->
                   <p style="font-size: 25px; font-weight: 400;">CredX Blockchain is the new age community-run technology powering the cryptocurrency <span class="text-warning">CredX Coin (CDX).</p>
                   <button class="btn btn-warning px-4 py-2" style="border-radius: 30px; font-weight: bold;"><a href="What_is_credx.html" style="text-decoration: none; color: black;">Explore Credx</a></button>
@@ -439,7 +431,7 @@
         </div>
         <div class="team row">
             <!--Card 1-->
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12" style="padding-left: 10%;">
                 <div class="card mr-2 d-inline-block shadow-lg">
                     <div class="card-img-top">
                         <img src="images/online/salary.png" style="width: 54%; position: relative;" class="mx-auto d-block">
@@ -592,6 +584,15 @@
     <!--footer start-->
     <div class="container p-0">
         <div class="row text-left">
+            <form class="d-flex justify-content-md-end" id="google_translate_element">
+                <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    <script>
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+                            }
+                    </script>
+                </script>
+            </form>
             <div class="col-md-4">
                 <h1 class="text-dark" style="font-size: 20px; font-weight: bold;">CredX24.com</h1>
                 <p class="text-muted"><img style="width: 20px;" src="images/online/join.png"> Join CredX Community.</p>
@@ -647,12 +648,12 @@
                     <div class="col-sm-2">
                         <h1 class="text-dark" style="font-size: 20px; font-weight: bold;">Follow Us</h1>
                                 <div class="icons">
-                                    <a href="#"><img src="images/online/facebook2.png" style="width: 22px;"></a>
+                                    <a href="https://www.facebook.com/CredXCoinOfficial" target="_blank"><img src="images/online/facebook2.png" style="width: 22px;"></a>
                                     <a href="https://instagram.com/credx_official?utm_medium=copy_link" target="_blank"><img src="images/online/instagram2.png" style="width: 25px;"></a>
-                                    <a href="#"><img src="images/online/twitter3.png" style="width: 22px;"></a>
-                                    <a href="#"><img src="images/online/youtube3.png" style="width: 22px;"></a>
-                                    <a href="#"><img src="images/online/linkdin2.png" style="width: 22px;"></a>
-                                    <a href="#"><img src="images/online/telegram2.png" style="width: 22px;"></a>
+                                    <a href="https://twitter.com/CREDX_" target="_blank"><img src="images/online/twitter3.png" style="width: 22px;"></a>
+                                    <a href="https://www.youtube.com/channel/UCIqeg1jZ2JjveGiMpRRmtqg" target="_blank"><img src="images/online/youtube3.png" style="width: 22px;"></a>
+                                    <a href="https://www.linkedin.com/in/credx24/" target="_blank"><img src="images/online/linkdin2.png" style="width: 22px;"></a>
+                                    <a href="https://t.me/credx" target="_blank"><img src="images/online/telegram2.png" style="width: 22px;"></a>
                                 </div>
                     </div>
             </div>
