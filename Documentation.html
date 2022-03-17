@@ -18,8 +18,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <title>Documentation</title>
+    <style>
+      body {
+        position: relative;
+      }
+      .affix {
+        top: 20px;
+        z-index: 9999 !important;
+      }
+      div.col-sm-9 div {
+        height: 250px;
+        font-size: 28px;
+      }
+      @media screen and (max-width: 810px) {
+        #section1, #section2, #section3, #section41, #section42  {
+          margin-left: 150px;
+        }
+      }
+      </style>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
     <!--Nav start-->
     <nav class="navbar navbar-expand-lg px-4 navbar-dark bg-dark">
       <div class="container-fluid">
@@ -116,56 +134,48 @@
       </div>
     </nav>
     <!--nav end-->
-    <!--section1 start-->
-    <section class="section1">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3 fixed-bottom">
-              <a class="navbar-brand" href="#overview">OverView</a>
-              <nav class="nav nav-pills flex-column">
-                <a class="nav-link" href="#item-1">Foundational topics</a>
-                <nav class="nav nav-pills flex-column">
-                  <a class="nav-link ms-3 my-1" href="#item-1-1">Intro to CREDX</a>
-                  <a class="nav-link ms-3 my-1" href="#item-1-2">Intro to CDX</a>
-                </nav>
-                <a class="nav-link" href="#item-2">Item 2</a>
-                <a class="nav-link" href="#item-3">Item 3</a>
-                <nav class="nav nav-pills flex-column">
-                  <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                  <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                </nav>
-              </nav>
-            </nav>
+    <!--scrollspy start-->
+    <div class="container">
+      <div class="row">
+        <nav class="col-sm-3" id="myScrollspy">
+          <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#section41">Section 4-1</a></li>
+                <li><a href="#section42">Section 4-2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="col-sm-9">
+          <div id="section1">    
+            <h1>Section 1</h1>
+            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
           </div>
-          <div class="col-md-8">
-            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
-              <h4 id="overview">CredX DEVELOPMENT DOCUMENTATION</h4>
-              <p>This documentation is designed to help you build with CredX. It covers Credx as a concept, explains the CredX tech stack, and documents advanced topics for more complex applications and use cases.</p>
-              <p>This is an open-source community effort, so feel free to suggest new topics, add new content, and provide examples wherever you think it might be helpful.</p>
-              <h4 id="item-1">Item 1</h4>
-              <p>...</p>
-              <h5 id="item-1-1">Item 1-1</h5>
-              <p>...</p>
-              <h5 id="item-1-2">Item 1-2</h5>
-              <p>...</p>
-              <h4 id="item-2">Item 2</h4>
-              <p>...</p>
-              <h4 id="item-3">Item 3</h4>
-              <p>...</p>
-              <h5 id="item-3-1">Item 3-1</h5>
-              <p>...</p>
-              <h5 id="item-3-2">Item 3-2</h5>
-              <p>...</p>
-            </div>
+          <div id="section2"> 
+            <h1>Section 2</h1>
+            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+          </div>        
+          <div id="section3">
+            <h1>Section 3</h1>
+            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
           </div>
-        </div>  
+          <div id="section41">
+            <h1>Section 4-1</h1>
+            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+          </div>      
+          <div id="section42">
+            <h1>Section 4-2</h1>
+            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+          </div>
+        </div>
       </div>
-    </section>
-    <!--section1 end-->
-    <!--section2 start-->
-
-    <!--section2 end-->
+    </div>    
+    <!--scrollspy end-->
     <!--footer start-->
     <div class="container p-0">
       <div class="row text-left">
@@ -233,7 +243,7 @@
                                   <a href="#"><img src="images/online/linkdin2.png" style="width: 25px;"></a>
                                   <a href="#"><img src="images/online/telegram2.png" style="width: 25px;"></a>
                               </div>
-                          </div>
+                  </div>
           </div>
       </div>
   </section>
